@@ -1,0 +1,23 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav1.ejs") %>
+
+<div class="create-blog content">
+  <form action="/documents/login" method ="POST">
+  <h2>Login to your account</h2>
+  <label for="username">Username</label>
+  <input type="text" id="username" name="username" placeholder="Click to enter" required>
+  <div class="email error"></div>
+  <label for="password">Password</label>
+  <input type="password" id="password" name="password" placeholder="Click to enter" required>
+  <div class="password error"></div>
+  <button>login</button>
+</form>
+</div>
+
+
+<%- include('partials/footer.ejs'); -%>
+</body>
+</html>
